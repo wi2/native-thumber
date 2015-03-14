@@ -1,0 +1,10 @@
+--timeout 5000
+--reporter spec
+--compilers coffee:coffee-script/register
+--require coffee-coverage/register
+--require coffee-script
+--require should
+--require test/_helper.coffee
+--colors
+--growl
+--recursive

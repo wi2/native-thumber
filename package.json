@@ -1,0 +1,49 @@
+{
+  "name": "native-thumber",
+  "version": "0.0.1",
+  "description": "create thumber and store to Amazon S3",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Mike WI2",
+  "license": "MIT",
+  "devDependencies": {
+    "coffee-coverage": "^0.4.5",
+    "mocha": "^2.2.1",
+    "should": "^5.2.0"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.1.17",
+    "coffee-script": "^1.9.1",
+    "fs-extra": "^0.16.5",
+    "imagemagick-native": "^1.7.0",
+    "lodash": "^3.5.0"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wi2/native-thumber.git"
+  },
+  "keywords": [
+    "imageMagick",
+    "Native",
+    "Amazon",
+    "S3",
+    "store",
+    "locale",
+    "File",
+    "upload",
+    "crop",
+    "resize",
+    "thumb",
+    "thumber",
+    "fast"
+  ],
+  "bugs": {
+    "url": "https://github.com/wi2/native-thumber/issues"
+  },
+  "homepage": "https://github.com/wi2/native-thumber"
+}
