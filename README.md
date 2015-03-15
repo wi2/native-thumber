@@ -1,8 +1,8 @@
-
+# native-thumber
+Node module : Very fast resize / crop Image with Native ImageMagick
 Librairy in coffee for node.js
 
-# USECASE
-
+## USECASE
 
 ```
 config =
@@ -24,7 +24,7 @@ uploader.process item.fd, filename, item.size, () ->
   console.log "Successfully"
 ```
 
-ou
+### ou
 
 ```
 config =
