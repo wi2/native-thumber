@@ -10,7 +10,7 @@ before_install:
   - sudo make install
   - cd ..
   - printf "\n" | pecl install imagick-beta
-	- sudo apt-get update -qq
-	- sudo apt-get -y install libmagick++-dev
-	- npm update -g npm
-	- sudo npm install
+  - sudo apt-get update -qq
+  - sudo apt-get -y install libmagick++-dev
+  - npm update -g npm
+  - sudo npm install
