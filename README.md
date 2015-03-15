@@ -9,7 +9,10 @@ You need :
 - ImageMagick's : http://www.imagemagick.org/
 - Magick++
 
-``` sudo apt-get install libmagick++-dev ```
+```
+sudo apt-get install libmagick++-dev
+```
+
 
 ## USECASE
 
