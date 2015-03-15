@@ -2,5 +2,15 @@ language: node_js
 node_js:
   - 0.10
 before_install:
-  - npm install
-
+  - wget http://www.imagemagick.org/download/ImageMagick.tar.gz
+  - tar xf ImageMagick.tar.gz
+  - cd ImageMagick*
+  - ./configure --prefix=/usr
+  - make
+  - sudo make install
+  - cd ..
+  - printf "\n" | pecl install imagick-beta
+	- sudo apt-get update -qq
+	- sudo apt-get -y install libmagick++-dev
+	- npm update -g npm
+	- sudo npm install
