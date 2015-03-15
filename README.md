@@ -2,10 +2,10 @@
 Node module : Very fast resize / crop Image with Native ImageMagick
 Librairy in coffee for node.js
 
+[![Build Status](https://travis-ci.org/wi2/native-thumber.svg)](https://travis-ci.org/wi2/native-thumber)
 
 
-## Installation
-You need :
+## You need :
 - ImageMagick's : http://www.imagemagick.org/
 - Magick++
 
@@ -13,11 +13,19 @@ You need :
 sudo apt-get install libmagick++-dev
 ```
 
+## Installation
+
+```
+npm install native-thumber
+```
+
 
 ## USECASE
 
-
 ```
+uploadService = require 'native-thumber'
+
+
 config =
   store: 'locale'
   directory: 'upload/'
@@ -28,14 +36,15 @@ config =
 
 uploader = new uploadService(config)
 
-uploader.process item.fd, filename, item.size, () ->
+uploader.process path, filename, size, () ->
   console.log "Successfully"
 ```
 
-### or
+### or another config
 
 
 ```
+
 config =
   store: 's3'
   s3Path:'./config/s3.json'
