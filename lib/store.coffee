@@ -23,13 +23,8 @@ module.exports.StoreS3 = class StoreS3
 
   process: (__newFile, done)->
     filename = __newFile.filename
-    console.log filename
     @s3.putObject @prepare(__newFile), (err, data)->
-      if err
-        console.log err
-      else
-        console.log 'Successfully uploaded the file', filename
-      done() if done
+      if err then console.log err else done() if done
 
 ###*
  * StoreLocale
@@ -44,8 +39,4 @@ module.exports.StoreLocale = class StoreLocale
   process: (__newFile, done)->
     filename = __newFile.filename
     fse.outputFile filename, @prepare(__newFile), (err)->
-      if err
-        console.log err
-      else
-        console.log 'Successfully uploaded the file', filename
-      done() if done
+      if err then console.log err else done() if done
